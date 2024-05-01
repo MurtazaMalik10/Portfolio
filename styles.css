@@ -1,0 +1,189 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark text color */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40; /* Dark navbar background */
+}
+
+.navbar-brand {
+    color: #fff; /* White text color for brand */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White text color for links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc; /* Light gray color on hover */
+}
+
+/* CSS for intro section */
+#intro {
+    position: relative; /* Establish a positioning context */
+    height: 100vh; /* Full viewport height */
+    background-image: url('assets/murtaza.jpg'); /* Using inline styles can be overridden here for consistency */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text for visibility */
+}
+
+.intro-text {
+    position: absolute; /* Positioning the text absolutely */
+    top: 20px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    max-width: 600px; /* Optional: limits the width of the text block */
+}
+
+.intro-title {
+    font-family: 'Poppins', sans-serif; /* Unique font family */
+    font-size: 3rem; /* Larger font size for prominence */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Adjust space between title and subtitle */
+    color: #e2e2e2; /* Custom title color */
+}
+
+.intro-subtitle {
+    font-family: 'Montserrat', sans-serif; /* Unique font family */
+    font-size: 1.5rem; /* Subtitle size */
+    color: #f9fafb; /* Custom subtitle color */
+}
+
+
+@media (max-width: 768px) {
+    .intro-title, .intro-subtitle {
+        text-align: left; /* Aligns text left on smaller screens */
+    }
+    .intro-text {
+        left: 15px; /* Slight adjustment for smaller screens */
+        top: 15px; /* Keeps text close to the top on smaller screens */
+    }
+}
+
+
+/* Skills section styles */
+#skills {
+    padding: 6rem 0;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Add margin-bottom to each column */
+#skills .col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Custom styles for progress bars */
+.progress-bar {
+    background-color: #28a745; /* Green progress bar */
+    color: #fff; /* White text color */
+}
+
+/* Customize the color for different proficiency levels if needed */
+.progress-bar.high {
+    background-color: #dc3545; /* Red for high proficiency */
+}
+
+.progress-bar.medium {
+    background-color: #ffc107; /* Yellow for medium proficiency */
+}
+
+.progress-bar.low {
+    background-color: #007bff; /* Blue for low proficiency */
+}
+
+/* Projects section styles */
+#projects {
+    padding: 6rem 0;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    border: none; /* Remove borders from cards */
+    background-color: #fff; /* White background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add slight lift on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #6c757d; /* Gray text color */
+}
+
+.card-img-top {
+    height: 200px; /* Set the height of the image */
+    object-fit: cover; /* Scale the image while maintaining aspect ratio */
+}
+
+/* Contact section styles */
+#contact {
+    padding: 6rem 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.form-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #212529; /* Dark text color */
+}
+
+.form-control {
+    margin-bottom: 2rem;
+    border: 1px solid #ced4da; /* Light gray border */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue button color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue icon color */
+    margin-right: 1rem;
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+@keyframes scrollAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
