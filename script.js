@@ -1,25 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling animation for navigation links
+    // Capture all navigation links
     const navLinks = document.querySelectorAll('nav a');
 
+    // Add event listener for each link
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
+            e.preventDefault(); // Prevent default anchor click behavior
 
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
+            const targetId = this.getAttribute('href'); // Get the href attribute of the clicked link
+            const targetSection = document.querySelector(targetId); // Find the corresponding section in the document
 
             if (targetSection) {
+                // Scroll to the target section smoothly
                 window.scrollTo({
                     top: targetSection.offsetTop,
-                    behavior: 'smooth'
+                    behavior: 'smooth' // Enable smooth scrolling
                 });
-
-                // Apply animation effect to target section
-                targetSection.style.animation = 'scrollAnimation 0.5s ease';
-                setTimeout(() => {
-                    targetSection.style.animation = '';
-                }, 500); // Adjust the delay to match the duration of the animation
             }
         });
     });
