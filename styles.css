@@ -7,6 +7,24 @@ body {
     color: #343a40; /* Dark text color */
 }
 
+h2 {
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    color: #343a40; /* Dark text color */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 2rem; /* Add some bottom margin */
+}
+
+/* Sub-heading styles */
+h4 {
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    font-size: 1.8rem; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    color: #343a40; /* Dark text color */
+    margin-bottom: 1rem; /* Add some bottom margin */
+}
+
 /* Navbar styles */
 .navbar {
     background-color: #343a40; /* Dark navbar background */
